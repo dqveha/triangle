@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Can we Triangle it?</title>
+</head>
+<body>
+  <div class="container">
+    <h1>INSERT YOUR TRIANGLE LENGTHS</h1>
+    <div>
+      <form id="triangleForm">
+        <div class="form-group">
+          <label for="sideOne">SIDE ONE:</label>
+          <input id="sideOne" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="sideTwo">SIDE TWO:</label>
+          <input id="sideTwo" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="sideThree">SIDE THREE:</label>
+          <input id="sideThree" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">TRIANGLE ME</button>
+      </form>
+    </div>
+
+    <div id="answer">
+      <span id="output"></span>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+<!-- 
+1) Three input fields
+  a) pythagorean theorem
+2) After undergoing the equation, it will spit out either:
+  a) Equilateral: All sides are equal. *** if
+  b) Isosceles: Exactly 2 sides are equal. *** else if
+  c) Scalene: No sides are equal. *** else if
+  d) NOT a triangle: The sum of the lengths of any two sides of a triangle is less than or equal to the length of the third side. a + b <= c *** else
+  ====> Likely an if/else statement 
+3)
+-->
